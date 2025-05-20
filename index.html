@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO GRAPHIQUE et IMPRIMERIE</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 5%;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #f1c40f;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .btn-primary {
+            background: #f1c40f;
+            color: #333;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #fff;
+            color: white;
+        }
+
+        .timer {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.4rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SGI STUDIO</div> <!-- Remplacer par votre logo -->
+        <div class="nav-links">
+            <a href="#home">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>STUDIO GRAPHIQUE et IMPRIMERIE</h1>
+        <h2>De la conception à l'impression</h2>
+        <p>
+            Création d'affiches percutantes, flyers élégants, logos mémorables et identités visuelles uniques. 
+            Service complet d'impression professionnelle pour concrétiser vos projets créatifs.
+        </p>
+        
+        <div class="cta-buttons">
+            <button class="btn btn-primary">Engagez-nous</button>
+            <button class="btn btn-secondary">Discutons</button>
+        </div>
+
+        <div class="timer"></div> <!-- Optionnel : Compteur personnalisable -->
+    </section>
+
+    <!-- Ajouter les autres sections ici -->
+</body>
+</html>
+<!-- Ajouter après la section Hero -->
+<style>
+    /* Services Section */
+    .services {
+        padding: 5rem 5%;
+        background: #f9f9f9;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #333;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+        color: #f1c40f;
+        margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+        color: #222;
+        margin-bottom: 1rem;
+    }
+
+    .service-card p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+        .services {
+            padding: 3rem 5%;
+        }
+    }
+</style>
+
+<!-- À PROPOS AVEC PHOTO -->
+<style>
+    /* About Section - Style Studio Pro */
+    .about-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 80vh;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .about-photo {
+        position: relative;
+        max-width: 80%;
+        justify-self: center;
+    }
+
+    .about-photo img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 20px 20px 0 var(--primary);
+    }
+
+    .about-badge {
+        position: absolute;
+        bottom: -30px;
+        right: -30px;
+        background: var(--dark);
+        color: white;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .about-badge span {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--accent);
+    }
+
+    .about-content {
+        padding-left: 50px;
+    }
+
+    .about-subtitle {
+        color: var(--primary);
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .about-title {
+        font-size: 3rem;
+        margin-bottom: 25px;
+        line-height: 1.2;
+    }
+
+    .about-text {
+        margin-bottom: 30px;
+        color: #555;
+        line-height: 1.8;
+        max-width: 90%;
+    }
+
+    .signature {
+        font-family: 'Brush Script MT', cursive;
+        font-size: 2.2rem;
+        color: var(--dark);
+        margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+        .about-hero {
+            grid-template-columns: 1fr;
+            padding: 80px 5%;
+        }
+        
+        .about-content {
+            padding-left: 0;
+            margin-top: 80px;
+        }
+        
+        .about-photo {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-title {
+            font-size: 2.2rem;
+        }
+        
+        .about-badge {
+            right: 0;
+            bottom: -50px;
+        }
+    }
+</style>
+
+<section class="about-hero" id="about">
+    <div class="about-photo">
+        <img src="https://i.postimg.cc/432JnFr1/Whats-App-Image-2025-05-19-23-42-10-d0f81b13.jpg" alt="Fondateur du Studio Graphique">
+        
+        <div class="about-badge">
+            <span>5+</span>
+            Années d'expérience
+        </div>
+    </div>
+    
+    <div class="about-content">
+        <span class="about-subtitle">Disigner graphic </span>
+        <h1 class="about-title">Votre Partenaire en Création Visuelle</h1>
+        
+        <p class="about-text">
+            Passionné par le design depuis plus de 5 ans, je dirige notre studio avec une vision : marier créativité et précision technique. Chaque projet est l'occasion de créer une identité visuelle qui vous ressemble et marque les esprits.
+        </p>
+        
+        <p class="about-text">
+            Notre devise "De la conception à l'impression" résume notre engagement à vous accompagner sur l'ensemble de la chaîne graphique, garantissant une cohérence parfaite jusqu'au produit final.
+        </p>
+        
+        <div class="signature">David ADJANOH</div>
+        <p><em>Fondateur - SGI Studio</em></p>
+    </div>
+</section>
+<section class="services">
+    <h2 class="section-title">Nos Expertises</h2>
+    
+    <div class="services-grid">
+        <!-- Carte 1 - Conception Graphique -->
+        <div class="service-card">
+            <i class="service-icon fas fa-palette"></i>
+            <h3>Création Graphique</h3>
+            <p>
+                Design d'affiches, flyers, brochures et supports visuels 
+                percutants pour votre communication
+            </p>
+        </div>
+
+        <!-- Carte 2 - Identité Visuelle -->
+        <div class="service-card">
+            <i class="service-icon fas fa-certificate"></i>
+            <h3>Identité Visuelle</h3>
+            <p>
+                Logos uniques, chartes graphiques complètes et 
+                guidelines de marque mémorables
+            </p>
+        </div>
+
+        <!-- Carte 3 - Impression -->
+        <div class="service-card">
+            <i class="service-icon fas fa-print"></i>
+            <h3>Impression Professionnelle</h3>
+            <p>
+                De la carte de visite aux grands formats, 
+                impression haute qualité sur tous supports
+            </p>
+        </div>
+
+        <!-- Carte 4 - Packaging -->
+        <div class="service-card">
+            <i class="service-icon fas fa-box-open"></i>
+            <h3>Design de Packaging</h3>
+            <p>
+                Solutions créatives pour emballages produits 
+                qui captivent vos clients
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Ajouter Font Awesome pour les icônes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO GRAPHIQUE et IMPRIMERIE | De la conception à l'impression</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Variables CSS */
+        :root {
+            --primary: #d36605; /* Rouge corail */
+            --secondary: #d36605; /* Turquoise */
+            --dark: #020f46; /* Noir bleuté */
+            --light: #F7FFF7; /* Blanc cassé */
+            --accent: #d36605; /* Jaune */
+        }
+
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            margin: 0 auto;
+        }
+
+        /* Navigation améliorée */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav.scrolled {
+            background: rgba(41, 47, 54, 0.98);
+            padding: 10px 0;
+        }
+
+        nav.scrolled .logo,
+        nav.scrolled .nav-links a {
+            color: white;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background-color: #fff;
+        }
+
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            margin: 5px;
+            background: none;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 107, 107, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.1);
+        }
+
+        /* Process Section */
+        .process {
+            background-color: var(--dark);
+            color: white;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            counter-reset: process-counter;
+        }
+
+        .process-step {
+            position: relative;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .process-step::before {
+            counter-increment: process-counter;
+            content: counter(process-counter);
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #f9f9f9;
+        }
+
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .client-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid var(--primary);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(rgba(41, 47, 54, 0.9), rgba(41, 47, 54, 0.9)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-icon {
+            margin-right: 15px;
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-left: 3px solid var(--primary);
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .submit-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--accent);
+            color: var(--dark);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+
+        .footer-links h3,
+        .footer-newsletter h3 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h3::after,
+        .footer-newsletter h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--primary);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-newsletter input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 50px 0;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">SGI STUDIO</div>
+            <div class="nav-links">
+                <a href="#home">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#process">Processus</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (existant) -->
+    <!-- ... -->
+
+    <!-- Services Section (existant) -->
+    <!-- ... -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Réalisations</h2>
+                <p>Découvrez nos projets récents</p>
+            </div>
+
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="graphisme">Graphisme</button>
+                <button class="filter-btn" data-filter="logo">Logos</button>
+                <button class="filter-btn" data-filter="print">Impression</button>
+                <button class="filter-btn" data-filter="packaging">Packaging</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Item 1 -->
+                <div class="portfolio-item" data-category="graphisme">
+                    <img src="https://via.placeholder.com/600x400?text=Affiche+Event" alt="Affiche événementielle" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Affiche Concert</h3>
+                        <p>Création pour festival de musique</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-item" data-category="logo">
+                    <img src="https://via.placeholder.com/600x400?text=Logo+Café" alt="Logo café" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Logo Café</h3>
+                        <p>Identité visuelle pour café artisanal</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-item" data-category="print">
+                    <img src="https://via.placeholder.com/600x400?text=Flyer+Restaurant" alt="Flyer restaurant" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Flyers Restaurant</h3>
+                        <p>Campagne print pour établissement gastronomique</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="portfolio-item" data-category="packaging">
+                    <img src="https://via.placeholder.com/600x400?text=Packaging+Bio" alt="Packaging produit bio" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Packaging Bio</h3>
+                        <p>Design d'emballage pour gamme de produits bio</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="portfolio-item" data-category="graphisme">
+                    <img src="https://via.placeholder.com/600x400?text=Carte+Visite" alt="Cartes de visite" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Cartes de Visite</h3>
+                        <p>Design et impression premium</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="portfolio-item" data-category="logo">
+                    <img src="https://via.placeholder.com/600x400?text=Logo+Startup" alt="Logo startup" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Logo Startup Tech</h3>
+                        <p>Identité moderne pour entreprise technologique</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre Processus</h2>
+                <p>Processus</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <h3>Consultation</h3>
+                    <p>Échange approfondi pour comprendre vos besoins et objectifs</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Conception</h3>
+                    <p>Création de maquettes et validation des directions artistiques</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Réalisation</h3>
+                    <p>Production des fichiers print-ready ou numériques</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Livraison</h3>
+                    <p>Impression professionnelle ou remise des fichiers finaux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Témoignages</h2>
+                <p>Ce que nos clients disent</p>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Le studio a parfaitement capté l'essence de notre marque. Le résultat final a dépassé nos attentes et notre nouveau packaging a boosté nos ventes de 30%."</p>
+                    <div class="client-info">
+                        <img src="https://i.postimg.cc/BbpP6GGn/jojo.jpg" alt="Client" class="client-img">
+                        <div>
+                            <h4>Jojo</h4>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-nous</h2>
+                        </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <p>Togo-Lomé</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <p>+228 92385399</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <p>davidadjanoh0@gmai.com</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <p>Lun-Sam: 8h-17h</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" placeholder="Votre email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Sujet">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea placeholder="Votre message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">SGI STUDIO</div>
+                    <p>De la conception à l'impression, nous accompagnons votre communication visuelle avec expertise et créativité.</p>
+                    <p>Votre succès est notre meilleure publicité.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#process">Processus</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <li><a href="#">Création Graphique</a></li>
+                        <li><a href="#">Identité Visuelle</a></li>
+                        <li><a href="#">Impression Offset</a></li>
+                        <li><a href="#">Packaging</a></li>
+                        <li><a href="#">Signalétique</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Abonnez-vous pour recevoir nos actualités et offres spéciales</p>
+                    <input type="email" placeholder="Votre email">
+                    <button class="submit-btn">S'abonner</button>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 STUDIO GRAPHIQUE et IMPRIMERIE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Portfolio filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Simple form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message! Nous vous contacterons bientôt.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
